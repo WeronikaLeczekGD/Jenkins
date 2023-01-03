@@ -30,7 +30,7 @@ Note: Pipelines should be executed in Jenkins agents
 
 ## The pipeline for the main branch should include the following job:
 
-1.Create a docker image
+1. Create a docker image
 
 Build a docker image and push it to the “main” repository.
 
