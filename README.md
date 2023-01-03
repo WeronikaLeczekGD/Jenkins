@@ -3,13 +3,13 @@
 
 1. [Install Jenkins according to documentation (Java based or docker based).](ad-1)
 
-2. [Make a base setup of Jenkins (User configuration, plugin installation).](ad-2)
+2. Make a base setup of Jenkins (User configuration, plugin installation)
 
 3. [Add a Dockerfile to your repository with spring-petclinic.](ad-3)
 
-4. Create 2 docker repositories on your own Nexus Repository (Instruction) or https://hub.docker.com/ called “main” and “mr”.
+4. [Create 2 docker repositories on your own Nexus Repository (Instruction) or https://hub.docker.com/ called “main” and “mr”.](ad-4)
 
-5. Add Jenkinsfile and describe the following behavior there:
+5. [Add Jenkinsfile and describe the following behavior there:](ad-5)
 
 The pipeline for a merge request should include the following jobs:
 
@@ -52,14 +52,6 @@ Note: Pipelines should be executed in Jenkins agents
 
 Note: When using launchctl the port will be 8080.
 
-
-## Ad 2
-
-Making a base setup of Jenkins (User configuration, plugin installation):
-
--User configuration:
-
-
 ## Ad 3
 
 I had added it in previous "Docker" topic:
@@ -67,6 +59,29 @@ I had added it in previous "Docker" topic:
 
 ## Ad 4
 
-Creating 2 docker repositories on your own Nexus Repository:
+Creating 2 docker repositories on dockerhub:
+
+![Screenshot 2023-01-03 at 19 08 41](https://user-images.githubusercontent.com/114099418/210415956-7949d92e-bf12-45b7-85df-59276676e3e9.png)
+
+## Ad 5
+
+My Jenkinsfile for mr repository:
+
+![Screenshot 2023-01-03 at 19 16 20](https://user-images.githubusercontent.com/114099418/210417088-491839a6-7a06-464c-946e-a36f5c864d6e.png)
+
+Succelfull pipeline:
+
+![Screenshot 2023-01-03 at 19 19 08](https://user-images.githubusercontent.com/114099418/210417547-c624c2a9-ba2b-48f8-8c4d-70cfdf0949ea.png)
+
+My Jenkinsfile_main for main repository:
+
+![Screenshot 2023-01-03 at 19 17 38](https://user-images.githubusercontent.com/114099418/210417238-c8e0a997-d776-45ca-89d7-7fa87e3e9ed5.png)
+
+Succelfull pipeline:
+
+![Screenshot 2023-01-03 at 19 20 26](https://user-images.githubusercontent.com/114099418/210417676-7a0170a3-956d-40fe-a05e-4acdec3e6d3d.png)
+
+Steps I had to do to make it succesfull:
+
 
 
